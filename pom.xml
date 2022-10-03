@@ -3,6 +3,7 @@
   <groupId>com.parthi.trainings.jenkins</groupId>
   <artifactId>jenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version> 
+  <packaging>war</packaging>
   <properties>
   <maven.compiler.source>1.8</maven.compiler.source>
   <maven.compiler.target>1.8</maven.compiler.target>
