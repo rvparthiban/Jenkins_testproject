@@ -4,4 +4,8 @@
 <artifactId>jenkins</artifactId>
 <version>2.0</version>
 <packaging>war</packaging>
+   <properties>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
 </project>
