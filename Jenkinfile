@@ -1,0 +1,14 @@
+pipeline {
+      agent any
+     stage('Preparation')
+        {
+            git 'https://github.com/rvparthiban/Jenkins_testproject.git'
+        }
+        stage('Build') {
+            bat "mvn clean test"
+        }
+        stage('Package') {
+            bat "mvn package"
+        }
+          
+    }
