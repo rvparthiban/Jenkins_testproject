@@ -1,14 +1,23 @@
 pipeline {
       agent any
-     stage('Preparation')
+      stages{
+      
+     stage('cleaning stage')
         {
-            git 'https://github.com/rvparthiban/Jenkins_testproject.git'
+            steps{
+            bat "mvn clean"
+            }
         }
         stage('Build') {
+         steps{
             bat "mvn clean test"
+            }
         }
         stage('Package') {
+         steps{
             bat "mvn package"
+            }
         }
           
+          }
     }
